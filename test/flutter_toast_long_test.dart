@@ -10,6 +10,9 @@ class MockFlutterToastLongPlatform
 
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
+
+  @override
+  Future<bool?> showToast(String msg, ToastDuration duration) => Future.value(true);
 }
 
 void main() {
